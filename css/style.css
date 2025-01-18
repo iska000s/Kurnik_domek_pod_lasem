@@ -1,9 +1,37 @@
-@import url('header.css');
-@import url(gallery.css);
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+@import url('_normalize.css');
+@import url('_reset.css');
+@import url('_header.css');
+@import url('_gallery.css');
+@import url('_first-page.css');
+@import url('_nav.css');
+
+html{
+    width: 100vw;
+    
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    overflow-x: hidden;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: "KoHo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+@media screen and (max-width: 1500px) {
+
+}
+  
+@media screen and (max-width: 900px){
+
+}
+
+@media screen and (max-width: 450px) {
+
+} */
