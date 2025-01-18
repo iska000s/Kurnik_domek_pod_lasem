@@ -4,6 +4,7 @@
 @import url('_gallery.css');
 @import url('_first-page.css');
 @import url('_nav.css');
+@import url('_description.css');
 
 html{
     width: 100vw;
