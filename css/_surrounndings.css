@@ -1,0 +1,45 @@
+#surroundings{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    padding-top: 0.5rem;
+    position: sticky;
+}
+
+.surroundings-img{
+    top: 0;
+    height: 100vh;
+    z-index: -60;
+    min-width: 100vw;
+}
+
+.surroundings_text{
+    width: 90vw;
+    background-color: white;
+    font-size: 1.4vw;
+    font-weight: 200;
+    line-height: 3vw;
+    padding-block: 10px;
+    z-index: 60;
+}
+
+@media screen and (max-width: 450px) {
+    
+    .surroundings_text{
+        width: 95vw;
+        font-size: 2vw;
+        line-height: 4vw;
+        padding-block: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    
+    .surroundings_text{
+        width: 95vw;
+        font-size: 3vw;
+        line-height: 5vw;
+        padding-block: 10px;
+    }
+}

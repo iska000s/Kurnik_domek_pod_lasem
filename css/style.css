@@ -5,13 +5,32 @@
 @import url('_first-page.css');
 @import url('_nav.css');
 @import url('_description.css');
+@import url('_video.css');
+@import url('_inhouse.css');
+@import url('_surrounndings.css');
+@import url('_price.css');
+@import url('_location.css');
+@import url('_contact.css');
+@import url('_footer.css');
+
+
+body::-webkit-scrollbar {
+    width: 2px;
+    height: 8px;
+    background-color: white;
+  }
+body::-webkit-scrollbar-thumb {
+    /* background: #788D7F; */
+    background: #5d5952;
+  }
 
 html{
     width: 100vw;
-    
+    scroll-behavior: smooth;
 }
 
 body{
+    
     display: flex;
     flex-direction: column;
     /* height: 100%; */
@@ -20,11 +39,21 @@ body{
     margin: 0;
     padding: 0;
     font-family: "KoHo", serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
 }
+.header2{
+    font-weight: 400;
+    font-size: 16px
+}
 
-/* 
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 1500px) {
 
 }
@@ -34,5 +63,8 @@ body{
 }
 
 @media screen and (max-width: 450px) {
+}
 
-} */
+.hide{
+    display: none;
+}

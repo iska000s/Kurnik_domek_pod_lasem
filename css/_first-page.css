@@ -1,10 +1,10 @@
 .first-page{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
-    z-index: -100;
-    position: absolute;
+    z-index: 0;
+    /* position: absolute; */
 }
 .first-page_img{
 position: absolute;
@@ -24,13 +24,30 @@ height: 100vh;
     justify-content: center;
     position: absolute;
     bottom: -5vh;
+    z-index: 100;
 }
 #dot{
     height: 1.5rem;
     width: 1.5rem;
     background-color:rgb(255, 255, 255);
     border-radius: 50%;
-    /* opacity: 60%; */
     box-shadow: rgb(255, 255, 255) 1px 0px 1.5px;
 }
+
+
+/* 
+ .nav-href{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: -5vh;
+}
+#dot{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color:rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: rgb(255, 255, 255) 1px 0px 1.5px;
+} */
 

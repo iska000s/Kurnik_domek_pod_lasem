@@ -1,0 +1,24 @@
+.footer-container{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 95vw;
+    height: 50px;
+    color: white;
+    font-size: 6px;
+    justify-content: space-between;
+    padding-inline: 5vw;
+}
+
+.social-media{
+    padding-right: 40px;
+}
+
+.instagram{
+    padding-right: 5px;
+}
+
+.fa-brands{
+    color: white;
+    font-size: 10px;
+}

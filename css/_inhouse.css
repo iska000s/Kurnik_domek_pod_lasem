@@ -1,69 +1,58 @@
-#description-href{
-    transform: translateY(-16px);
-}
-
-.description_container{
+.in-house_container{
     display: flex;
     width: 100vw;
-    /* height: 85vh; */
     min-height: 85vh;
     max-height: auto;
-    padding-top: 15px;
+    padding-top: 0;
 }
 
-.description_content{
+.in-house_content{
     display: flex;
     flex-direction: column;
     padding: 10px;
     background-color: #788D7F;
     color: white;
 }
-.description_text{
+.in-house_text{
     font-size: 10px;
     font-weight: 200;
     margin-top: 40px;
     line-height: 15px;
 }
-.description_gallery{
+.in-house_gallery{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
-    margin-left: 5px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
 }
 
-.description_photo{
+img{
     height: 40vh;
+
 }
 
-#video_container{
-    display: none;
-}
-
-video{
-    display: none;
-}
 .empty-element{
     display: none;
 }
 
 @media screen and (max-width: 450px) {
-    .description_container{
+    .in-house_container{
         min-height: 85vh;
         margin-bottom: 0;
         padding-top: 6vw;
         width: 100vw;
         height: auto;
     }
-    .description_header{
-        margin-top: 2vw; 
-    } 
-    .description_content{
+    .in-house_header{
+        margin-top: 2vw;
+    }
+    .in-house_content{
         padding: 5px;
         margin-bottom: 0;
     }
-    .description_text{
+    .in-house_text{
         font-size: 3.5vh;
         font-weight: 200;
         min-width: 45vw;
@@ -71,12 +60,11 @@ video{
         margin-top: 15px;
         line-height: 4.5vh;
     }
-    .description_gallery{
+    .in-house_gallery{
         margin-inline: 0.5vw;
         margin-bottom: 0;
     }
-    
-    .description_photo{
+    .in-house_photo{
         max-height: 50vh;
     }
     .empty-element{
@@ -84,11 +72,10 @@ video{
         height: 100%;
         background-color: #788D7F;
     }
-
 }
 
 @media screen and (max-width: 250px) {
-    .description_text{
+    .in-house_text{
         font-size: 3.5vw;
         font-weight: 200;
         min-width: 65vw;

@@ -1,0 +1,123 @@
+#contact{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.5rem;
+    height: 40vh;
+    font-size: 14px;
+    font-weight: 200;
+    gap: 10px;
+    width: 80vw;
+    justify-content: space-around;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    gap: 10px;
+}
+
+.contact-button{
+    background-color: #788D7F;
+    color: white;
+    height: 20px;
+    width: 154px;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 8px;
+    font-weight: 200;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+.contact-button:hover{
+    font-weight: 600;
+    font-size: 8px;
+}
+
+input{
+    border: none;
+    background-color:  rgb(201, 201, 201);
+}
+
+.form-element{
+    display: flex;
+}
+label{
+    width: 50px;
+}
+
+input[type=text], input[type=email]{
+    font-size: 9px;
+    color: white;
+    outline: none;
+    width: 150px;
+  }
+
+  input[type=text]:focus, input[type=email]:focus {
+    background-color: #788D7F;
+}
+
+@media screen and (max-width: 450px) {
+    #contact{
+        flex-direction: column;
+        padding-top: 0rem;
+        height: 70vh;
+        width: 80vw;
+        gap: 20px;
+        width: 80vw;
+        justify-content: flex-start;
+    }
+    .contact-form{
+        display: flex;
+        height:40px;
+        gap: 10px;
+    }
+    
+    .contact-button{
+        background-color: #788D7F;
+        color: white;
+        height: 20px;
+        width: 80vw;
+        border: none;
+        padding: 2px;
+        cursor: pointer;
+        font-size: 6px;
+        font-weight: 200;
+        border-radius: 5px;
+        align-self: flex-end;
+    }
+    
+    .contact-button:hover{
+        font-weight: 600;
+        font-size: 6px;
+    }
+    
+    input{
+        border: none;
+        background-color:  rgb(201, 201, 201);
+    }
+    
+    .form-element{
+        display: flex;
+        width: 80vw;
+    }
+    label{
+        width: 30vw;
+        font-size: 10px;
+    }
+    
+    input[type=text], input[type=email]{
+        font-size: 6px;
+        color: white;
+        outline: none;
+        width: 50vw;
+      }
+    
+      input[type=text]:focus, input[type=email]:focus {
+        background-color: #788D7F;
+    }
+}

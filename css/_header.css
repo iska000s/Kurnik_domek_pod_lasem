@@ -1,13 +1,12 @@
 
 #logo{
     display: flex;
+    width: 18vw;
     flex-direction: column;
-    align-items: flex-end;
     position: sticky;
-    right: 0;
     top: 0;
     z-index: 100;
-    height: 100vh;
+    /* transform: translateX(95px); */
 }
 .header1{
     position: sticky;
@@ -19,26 +18,38 @@
 }
 .logo-main{
     line-height: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    
 }
 .logo-second{
-    font-size: 0.68rem;
+    font-size: 0.5rem;
+}
+
+.header-href{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1500px) {
 #logo{
-    margin-right: 2rem;
-    /* margin-top: 3rem; */
+
+    transform: translateX(85vw);
+    width: 20vw;
 }
 }
   
-@media screen and (max-width: 900px){
+@media screen and (max-width: 700px){
     #logo{
-        margin-right: 1rem;
+        transform: translateX(84vw);
+        width: 20vw;
     }
 }
 
 @media screen and (max-width: 450px) {
+    #logo{
+        transform: translateX(79vw);
+        width: 20vw;
+
+    }
     .logo-main{
         line-height: 5.3vw;
         font-size: 5vw;
@@ -48,6 +59,24 @@
         font-size: 2vw;
     }
 }
+
+@media screen and (max-width: 250px) {
+    #logo{
+        transform: translateX(75vw);
+        width: 20vw;
+
+    }
+    .logo-main{
+        line-height: 5.3vw;
+        font-size: 5vw;
+    }
+    .logo-second{
+        line-height: 2.2.vw;
+        font-size: 2vw;
+    }
+}
+
+
 
 
 
