@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Khmer&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- arrow - delete -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward_alt" /> -->
   </head>
   <body>
+    <div class="stripe">
+      <address class="stripe-adress">
+        <a class="instagram" href="https://www.instagram.com/kurnik_domek_pod_lasem/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="facebook" href="https://www.facebook.com/people/Kurnik-Domek-pod-lasem/61553290592970/?locale=pl_PL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="mailto:auszynski@gmail.com?subject=Kurnik - Zapytanie ze strony" class="stripe-adress stripe-adress_mail">auszynski@gmailcom</a>
+      <a href="tel:+48600902000" class="stripe-adress stripe-adress_tel">tel. +48 600 902 000</a>
+      
+    </address>
+    
+    </div>
     <header id="logo" class="header">
       <a class="header-href" href="#">
       <h1 class="header1 logo logo-main">Kurnik</h1>
@@ -30,16 +32,13 @@
     </header>
     <section class="first-page">
       <p class="first-page_img"></p>
-      
       <a href="#nav-href" scroll="smooth">
-      <div class="dot-arrow">
-      <span id="dot">
-        <!-- <span class="material-symbols-outlined" id="arrow">
-          arrow_downward_alt
-        </span> -->
-      </span>
-    </div>
-  </a>
+        <div class="dot-arrow">
+          <span id="dot">
+            <i class="fa-solid fa-angle-down" id="arrow"></i>
+          </span>
+        </div>
+      </a>
     </section>
     <span id="nav-href"></span>
     <nav id="aside-container" class="aside-container nav">
@@ -272,14 +271,17 @@
       </section>
       <span id="price-href"></span>
       <section id="price-container2" class="price-list_container">
-        <h3 class="header3" id="prcie-list_header header3">Cennik</h3>
-        <ul id="price-list">
-          <li id="price">cena</li>
-          <li id="price">cena</li>
-          <li id="price">cena</li>
-          <li id="price">cena</li>
-          <li id="price">cena</li>
-        </ul>
+        <div class="price-box"></div>
+        <div class="price-list_box">
+          <h3 class="header3" id="prcie-list_header header3">Cennik</h3>
+          <ul id="price-list">
+            <li id="price">cena</li>
+            <li id="price">cena</li>
+            <li id="price">cena</li>
+            <li id="price">cena</li>
+            <li id="price">cena</li>
+          </ul>
+        </div>
       </section>
       <span id="location-href"></span>
       <section id="location" class="location-conatiner">

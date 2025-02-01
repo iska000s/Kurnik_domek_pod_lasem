@@ -1,4 +1,3 @@
-
 #logo{
     display: flex;
     width: 18vw;
@@ -15,14 +14,16 @@
     font-weight: 600;
     font-style: normal;
     color: rgb(0, 0, 0);
+ 
 }
 .logo-main{
-    line-height: 1.5rem;
+    line-height: 1.3rem;
     font-size: 1.5rem;
     
 }
 .logo-second{
     font-size: 0.5rem;
+    margin-left: 1px;
 }
 
 .header-href{

@@ -1,11 +1,7 @@
-#description-href{
-    transform: translateY(-16px);
-}
 
 .description_container{
     display: flex;
     width: 100vw;
-    /* height: 85vh; */
     min-height: 85vh;
     max-height: auto;
     padding-top: 15px;
@@ -15,6 +11,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
+    width: 100vw;
     background-color: #788D7F;
     color: white;
 }
@@ -35,6 +32,9 @@
 
 .description_photo{
     height: 40vh;
+    animation: pictures linear;
+    animation-timeline: scroll(root y);
+
 }
 
 #video_container{
@@ -44,17 +44,19 @@
 video{
     display: none;
 }
-.empty-element{
+/* .empty-element{
     display: none;
-}
+} */
+
+
 
 @media screen and (max-width: 450px) {
     .description_container{
+        height: auto;
         min-height: 85vh;
+        width: 100vw;
         margin-bottom: 0;
         padding-top: 6vw;
-        width: 100vw;
-        height: auto;
     }
     .description_header{
         margin-top: 2vw; 
@@ -79,21 +81,51 @@ video{
     .description_photo{
         max-height: 50vh;
     }
-    .empty-element{
-        display: block;
-        height: 100%;
-        background-color: #788D7F;
-    }
 
 }
 
 @media screen and (max-width: 250px) {
-    .description_text{
-        font-size: 3.5vw;
-        font-weight: 200;
-        min-width: 65vw;
-        justify-content: space-around;
+    .description_container{
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        min-height: auto;
+        background-color: #788D7F;
         margin-top: 15px;
-        line-height: 4.5vw;
+        padding-top: 0;
+    }
+
+    .description_content{
+        /* width: 100vw; */
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        margin-inline: 1px;
+        width: 90vw;
+        height: 100%;
+    }
+    .description_text{
+        font-size: 6px;
+        /* font-weight: 200; */
+        margin-top: 10px;
+        /* margin-inline: 3px; */
+        line-height: 9px;
+        width: 90vw;
+        padding-bottom: 10px;
+    }
+
+    .description_container img{
+        display: none;
     }
 }
+
+/* @keyframes pictures{
+    0%{
+        transform:translateX(100px);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+} */

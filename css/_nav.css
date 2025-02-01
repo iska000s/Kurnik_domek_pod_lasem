@@ -1,6 +1,6 @@
 .aside-container{
     display: flex;
-    height: 33px;
+    height: 29px;
     width: 100vw;
     position: sticky;
     top: 0;
@@ -19,6 +19,7 @@
     align-items: center;
     font-size: 10px;
 }
+
 
 .menu_element{
     height: 100%;
