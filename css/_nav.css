@@ -1,13 +1,17 @@
 .aside-container{
     display: flex;
     height: 29px;
-    width: 100vw;
+    width: 100%;
     position: sticky;
     top: 0;
     background-color: #ffffff;
     z-index: 90;
     border-bottom: 0.2px solid #515151;
     border-radius: 0 0 20px 20px;
+    opacity: 90%;
+}
+.aside-container:hover{
+    opacity: 100%;
 }
 .menu_container{
     height: 100%;
@@ -15,9 +19,9 @@
     flex-direction: row;
     width: 80%;
     gap: 1rem;
-    margin-left: 15px;
+    margin-left: 20px;
     align-items: center;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 
@@ -39,6 +43,7 @@
     text-decoration: underline solid rgb(94, 93, 93) 0.3px;
     text-underline-offset: 2px;
 }
+
 
 
 @media screen and (max-width: 1500px) {

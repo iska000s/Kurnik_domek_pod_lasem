@@ -1,6 +1,6 @@
 .stripe{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 10px;
     background-color: black;
     z-index: 100;
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     z-index: 0;
     /* position: absolute; */
 }
@@ -41,8 +41,25 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
-width: 100vw;
+width: 102vw;
 height: 99vh;
+animation: zoom-forest 100s infinite linear;
+}
+
+
+@keyframes zoom-forest{
+    0%{
+        background-size: 100%;
+        /* scale: 100%; */
+    }
+    50%{
+        background-size: 140%;
+        /* scale: 105%; */
+    }
+    100%{
+        background-size: 100%;
+        /* scale: 100%; */
+    }
 }
 
 .dot-arrow{

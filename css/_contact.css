@@ -3,7 +3,7 @@
     flex-direction: row;
     padding-top: 2.5rem;
     height: 40vh;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 200;
     gap: 10px;
     width: 80vw;
@@ -46,7 +46,7 @@ input{
 .form-element{
     display: flex;
 }
-label{
+.contact-label{
     width: 50px;
 }
 
@@ -57,8 +57,18 @@ input[type=text], input[type=email]{
     width: 150px;
   }
 
-  input[type=text]:focus, input[type=email]:focus {
+input[type=text]:focus, input[type=email]:focus {
     background-color: #788D7F;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    margin-right: 37px;
+}
+
+.checbox-label{
+    display: flex;
+    width: 200px;
+    font-size: 6px;
 }
 
 @media screen and (max-width: 450px) {
@@ -105,7 +115,7 @@ input[type=text], input[type=email]{
         display: flex;
         width: 80vw;
     }
-    label{
+    .contact-label{
         width: 30vw;
         font-size: 10px;
     }
@@ -121,3 +131,4 @@ input[type=text], input[type=email]{
         background-color: #788D7F;
     }
 }
+

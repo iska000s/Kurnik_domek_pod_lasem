@@ -1,10 +1,10 @@
 .in-house_container{
     display: flex;
-    width: 100vw;
-    min-height: 85vh;
+    width: 100%;
+    min-height: 74vh;
     max-height: auto;
     /* height: 85vh; */
-    padding-top: 15px;
+    padding-top: 0px;
 }
 
 .in-house_content{
@@ -31,7 +31,7 @@
     margin-right: 5px;
 }
 .in-house_photo{
-    height: 40vh;
+    height: 35vh;
     animation: pictures linear;
     animation-timeline: scroll(root y);
 }
