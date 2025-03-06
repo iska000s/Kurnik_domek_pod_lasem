@@ -225,7 +225,6 @@
     border-radius: 5px;
     object-fit: cover;
     cursor: pointer;
-    /* transition: transform 0.2s, border-color 0.2s; */
 }
 
 .large-images {
@@ -236,3 +235,4 @@
     margin-bottom: 20px;
     overflow: hidden; /* Aby ograniczyć widoczność poza kontenerem */
 }
+

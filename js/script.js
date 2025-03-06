@@ -1,277 +1,3 @@
-// // document.getElementById("contact-form").addEventListener("submit", function (e) {
-// //     e.preventDefault();
-// //     alert("Dziękujemy za kontakt!");
-// //   });
-
-// // DOBRZE BYŁO BY ZROBIĆ OD NOWA, BO JAK BARDZO SZYBKO PRZEWIJAM TO SIĘ GUBI KARUZELA I ŻEBY ZROBIĆ Z OBIEKTEM
-// // TZN. ŻE DRUGIE ZDJĘCIE TO PIERWSZE ZDJĘCIE NA KARUZELI
-
-// // const thumbnails = document.querySelectorAll('.thumbnail');
-// // const largeImg1 = document.getElementById('large-img-1');
-// // const largeImg2 = document.getElementById('large-img-2');
-// // const largeImg3 = document.getElementById('large-img-3');
-// // const prevBtn = document.querySelector('.prev-btn');
-// // const nextBtn = document.querySelector('.next-btn');
-// // const thumbnailsContainer = document.querySelector('.thumbnails');
-// // const gallery = document.querySelector('.thumbnails');
-
-// // let currentIndex = 0;
-
-// // function updateLargeImages(index) {
-// //   // pobierz kolejne zdjęcia miniatur
-
-// //   const firstImg = thumbnails[index - 1];
-// //   const secondImg = thumbnails[index];
-// //   const thirdImg = thumbnails[index + 1];
-// //   // ustaw odpowiednie obrazy
-// //   largeImg1.src = firstImg ? firstImg.dataset.large : thumbnails[17].dataset.large;
-// //   largeImg2.src = secondImg ? secondImg.dataset.large : '';
-// //   largeImg3.src = thirdImg ? thirdImg.dataset.large : thumbnails[0].dataset.large;
-
-// // }
-
-// // // obsługa kliknięcia na miniaturę
-// // thumbnails.forEach((thumbnail, index) => {
-// //   thumbnail.addEventListener('click', () => {
-// //     currentIndex = index;
-// //     updateLargeImages(currentIndex);
-
-// //   });
-// // });
-
-
-// // // obsługa przycisków przewijania
-
-// // prevBtn.addEventListener('click', () => {
-// //   if (currentIndex > 0) {
-// //     currentIndex -= 1;
-// //     updateLargeImages(currentIndex);
-// //     thumbnailsContainer.scrollLeft -= thumbnails[currentIndex].offsetWidth + 8;
-// //   } else if (currentIndex === 0) {
-// //     currentIndex = thumbnails.length - 1;
-// //     updateLargeImages(currentIndex);
-// //     thumbnailsContainer.scrollLeft +=
-// //       thumbnails[currentIndex].offsetWidth + thumbnails.length * 40;
-// //   }
-// // });
-
-// // nextBtn.addEventListener('click', () => {
-// //   if (currentIndex < thumbnails.length - 1) {
-// //     currentIndex += 1;
-// //     updateLargeImages(currentIndex);
-// //     thumbnailsContainer.scrollLeft += thumbnails[currentIndex].offsetWidth + 8;
-// //   } else if (currentIndex === 17) {
-// //     currentIndex = 0;
-// //     updateLargeImages(currentIndex);
-// //     thumbnailsContainer.scrollLeft -= thumbnails[currentIndex];
-// //   }
-// // });
-
-// // // Inicjalizacja – pokaż pierwsze dwa zdjęcia
-// // updateLargeImages(currentIndex);
-
-// // console.log('TEST');
-
-// const images = [
-//   {
-//       id: 1,
-//       src:"images/dom/1.jpg"
-//   },
-//   {
-//       id: 2,
-//       src:"images/dom/2.jpg"
-//   },
-//   {
-//       id: 3,
-//       src:"images/dom/3.jpg"
-//   },
-//   {
-//       id: 4,
-//       src:"images/dom/4.jpg"
-//   },
-//   {
-//       id: 5,
-//       src:"images/dom/5.jpg"
-//   }
-// ];
-
-
-// const thumbnails = document.querySelectorAll('.thumbnail');
-// const largeImg1 = document.getElementById('large-img-1');
-// const largeImg2 = document.getElementById('large-img-2');
-// const largeImg3 = document.getElementById('large-img-3');
-// const prevBtn = document.querySelector('.prev-btn');
-// const nextBtn = document.querySelector('.next-btn');
-// const thumbnailsContainer = document.querySelector('.thumbnails');
-// const gallery = document.querySelector('.thumbnails');
-
-// let currentIndex = 0;
-
-// function thumbnailImages() {
-//   for (let i=0; i<images.length; i++){
-//     thumbnailImages.src = images[i].src;
-//     console.log(thumbnailImages.src);
-//   }
-// }
-// thumbnailImages();
-
-
-
-// function updateLargeImages(index) {
-//   // pobierz kolejne zdjęcia miniatur
-
-//   const firstImg = thumbnails[index - 1];
-//   const secondImg = thumbnails[index];
-//   const thirdImg = thumbnails[index + 1];
-//   // ustaw odpowiednie obrazy
-//   // largeImg1.src = firstImg ? firstImg.dataset.large : thumbnails[17].dataset.large;
-//   // largeImg2.src = secondImg ? secondImg.dataset.large : '';
-//   // largeImg3.src = thirdImg ? thirdImg.dataset.large : thumbnails[0].dataset.large;
-
-// }
-
-// // obsługa kliknięcia na miniaturę
-// thumbnails.forEach((thumbnail, index) => {
-//   thumbnail.addEventListener('click', () => {
-//     currentIndex = index;
-//     updateLargeImages(currentIndex);
-
-//   });
-// });
-
-
-// // obsługa przycisków przewijania
-
-// prevBtn.addEventListener('click', () => {
-//   if (currentIndex > 0) {
-//     currentIndex -= 1;
-//     updateLargeImages(currentIndex);
-//     thumbnailsContainer.scrollLeft -= thumbnails[currentIndex].offsetWidth + 8;
-//   } else if (currentIndex === 0) {
-//     currentIndex = thumbnails.length - 1;
-//     updateLargeImages(currentIndex);
-//     thumbnailsContainer.scrollLeft +=
-//       thumbnails[currentIndex].offsetWidth + thumbnails.length * 40;
-//   }
-// });
-
-// nextBtn.addEventListener('click', () => {
-//   if (currentIndex < thumbnails.length - 1) {
-//     currentIndex += 1;
-//     updateLargeImages(currentIndex);
-//     thumbnailsContainer.scrollLeft += thumbnails[currentIndex].offsetWidth + 8;
-//   } else if (currentIndex === 17) {
-//     currentIndex = 0;
-//     updateLargeImages(currentIndex);
-//     thumbnailsContainer.scrollLeft -= thumbnails[currentIndex];
-//   }
-// });
-
-// // Inicjalizacja – pokaż pierwsze dwa zdjęcia
-// updateLargeImages(currentIndex);
-
-// console.log('TEST');
-
-
-
-// const images = [
-//   { id: 1, src: 'images/dom/1.jpg' },
-//   { id: 2, src: 'images/dom/2.jpg' },
-//   { id: 3, src: 'images/dom/3.jpg' },
-//   { id: 4, src: 'images/dom/4.jpg' },
-//   { id: 5, src: 'images/dom/5.jpg' },
-//   { id: 6, src: 'images/dom/6.jpg' },
-//   { id: 7, src: 'images/dom/7.jpg' },
-//   { id: 8, src: 'images/dom/8.jpg' },
-//   { id: 9, src: 'images/dom/9.jpg' }
-//   { id: 10, src: 'images/dom/10.jpg' }
-//   { id: 11, src: 'images/dom/11.jpg' }
-//   { id: 12, src: 'images/dom/12.jpg' }
-//   { id: 13, src: 'images/dom/13.jpg' }
-//   { id: 14, src: 'images/dom/14.jpg' }
-// ];
-
-// let currentIndex = 0;
-
-// function loadImages() {
-//   // Ładowanie dużych zdjęć
-//   document.getElementById('large1').src = images[currentIndex].src;
-//   document.getElementById('large2').src = images[currentIndex + 1].src;
-//   document.getElementById('large3').src = images[currentIndex + 2].src;
-  
-//   // Ładowanie miniatur
-//   const thumbnailsContainer = document.querySelector('.thumbnails');
-//   thumbnailsContainer.innerHTML = ''; // Czyszczenie poprzednich miniatur
-
-//   images.forEach((image, index) => {
-//       const imgElement = document.createElement('img');
-//       imgElement.src = image.src;
-//       imgElement.alt = `Thumbnail ${image.id}`;
-//       imgElement.dataset.index = index;
-
-//       for(let i=1; i<7; i++){
-//         imgElement`${i}`.src = images[currentIndex+`${i}`].src;
-//         imgElement`${i}`.alt = `Thumbnail ${image.id}`;
-//         imgElement`${i}`.dataset.index = index;
-//       }
-
-//       if (index >= currentIndex && index < currentIndex + 7) {
-//           thumbnailsContainer.appendChild(imgElement);
-//       }
-//   });
-
-//   updateActiveThumbnail();
-// }
-
-// function thumbnailImg{
-//   const imgElement = document.createElement('img');
-//   imgElement.src = image.src;
-//   imgElement.alt = `Thumbnail ${image.id}`;
-//   imgElement.dataset.index = index;
-//   if (index >= currentIndex && index < currentIndex + 7) {
-//       thumbnailsContainer.appendChild(imgElement);
-//   }
-// }
-
-// function updateActiveThumbnail() {
-//   const thumbnails = document.querySelectorAll('.thumbnails img');
-//   thumbnails.forEach((thumb) => {
-//       thumb.classList.remove('active');
-//       if (thumb.dataset.index == currentIndex) {
-//           thumb.classList.add('active');
-//       }
-//   });
-// }
-
-// document.querySelector('.thumbnail-container').addEventListener('click', (event) => {
-//   if (event.target.tagName === 'IMG') {
-//       currentIndex = parseInt(event.target.dataset.index);
-//       loadImages();
-//   }
-// });
-
-// document.querySelector('.prev').addEventListener('click', () => {
-//   if (currentIndex > 0) {
-//       currentIndex--;
-//   } else {
-//       // Zapętlanie: po dojściu do pierwszego zdjęcia przechodzimy do ostatniego
-//       currentIndex = images.length - 3;
-//   }
-//   loadImages();
-// });
-
-// document.querySelector('.next').addEventListener('click', () => {
-//   if (currentIndex < images.length - 3) {
-//       currentIndex++;
-//   } else {
-//       // Zapętlanie: po dojściu do ostatniego zdjęcia przechodzimy do pierwszego
-//       currentIndex = 0;
-//   }
-//   loadImages();
-// });
-
-// loadImages();
-
 
 const images = [
   { id: 1, src: 'images/dom/1.jpg' },
@@ -312,21 +38,6 @@ let currentIndex = 0; // Indeks pierwszego duzego zdj zdjęcia
 
 function loadImages() {
 
-  // Ładowanie dużych zdjęć
-  // if(currentIndex <= images.length-3){
-  //   document.getElementById('large1').src = images[currentIndex].src;
-  //   document.getElementById('large2').src = images[currentIndex + 1].src;
-  //   document.getElementById('large3').src = images[currentIndex + 2].src;
-  // } else if(currentIndex=images.length-2){
-  //   document.getElementById('large1').src = images[currentIndex].src;
-  //   document.getElementById('large2').src = images[currentIndex+1].src;
-  //   document.getElementById('large3').src = images[0].src;
-  // } else if(currentIndex=images.length-1){
-  //   document.getElementById('large1').src = images[currentIndex].src;
-  //   document.getElementById('large2').src = images[0].src;
-  //   document.getElementById('large3').src = images[1].src;
-  // }
-
   const imagesLength = images.length;
   // Check if the currentIndex and the next 2 indexes are within the array bounds
   if (currentIndex < imagesLength && currentIndex + 1 < imagesLength &&  currentIndex > 0) {
@@ -354,19 +65,6 @@ function loadImages() {
   thumbnailsContainer.innerHTML = ''; // Czyszczenie poprzednich miniatur
 
   // Tworzenie 8 miniatur, przy czym druga miniatura to środkowe zdjęcie
-  // for (let i = currentIndex; i < currentIndex + 11; i++) {
-  //   if (i < images.length) {
-  //     const imgElement = document.createElement('img');
-  //     imgElement.src = images[i].src;
-  //     imgElement.alt = `Thumbnail ${images[i].id}`;
-  //     imgElement.dataset.index = i;
-
-  //     // Dodanie miniatury do kontenera
-  //     thumbnailsContainer.appendChild(imgElement);
-  //   }
-  // }
-
-
   for (let i = currentIndex; i <= images.length+9; i++) {
 
     if(i<images.length){
@@ -386,7 +84,6 @@ function loadImages() {
       imgElement.src = images[j].src;
       imgElement.alt = `Thumbnail ${images[j].id}`;
       imgElement.dataset.index = j;
-  
   
       thumbnailsContainer.appendChild(imgElement);
     }
@@ -434,7 +131,6 @@ document.querySelector('.next').addEventListener('click', () => {
   }
   loadImages();
 });
-
 
 
 loadImages();
@@ -492,3 +188,23 @@ cookiebutton.addEventListener('click', (e) => {
 
 // Wywołanie funkcji, aby pokazać baner
 window.onload = showCookieBanner;
+
+
+
+
+// POKAZANIE MENU PO NAJECHANIU NA OPIS
+const descriptionMenu = document.querySelector('.menu-description');
+const descriptionMenuList = document.querySelector('.menu-description-list');
+descriptionMenu.addEventListener('mouseover', (e)=> {
+  showMenu();
+})
+descriptionMenu.addEventListener('mouseout', (e)=> {
+  hideMenu();
+})
+
+function showMenu() {
+  descriptionMenuList.style.display = "flex";
+}
+function hideMenu() {
+  descriptionMenuList.style.display = "none";
+}

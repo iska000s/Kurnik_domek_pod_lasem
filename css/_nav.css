@@ -9,6 +9,8 @@
     border-bottom: 0.2px solid #515151;
     border-radius: 0 0 20px 20px;
     opacity: 90%;
+    box-shadow: 0.5px 0.5px 0.5px 0px rgb(0, 0, 0);
+
 }
 .aside-container:hover{
     opacity: 100%;
@@ -38,12 +40,24 @@
     height: 100%;
 }
 
-.menu_element:hover{
-    transform: scale(1.2);
+a:hover{
+    /* transform: scale(1.1); */
     text-decoration: underline solid rgb(94, 93, 93) 0.3px;
     text-underline-offset: 2px;
 }
 
+.menu-description-list{
+    background-color: white;
+    /* width: 100px; */
+    height: 50px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-3px, 0px);
+    padding: 10px 10px 10px 5px;
+    /* box-shadow: 0.5px 0.5px 0.5px 0px rgb(0, 0, 0); */
+    border: black solid 0.2px;
+}
 
 
 @media screen and (max-width: 1500px) {

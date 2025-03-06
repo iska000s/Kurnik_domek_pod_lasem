@@ -1,3 +1,6 @@
+#in-house-href{
+    transform: translateY(-30px);
+}
 .in-house_container{
     display: flex;
     width: 100%;
@@ -16,10 +19,10 @@
     color: white;
 }
 .in-house_text{
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 200;
-    margin-top: 40px;
-    line-height: 15px;
+    margin-block: 20px;
+    line-height: 13px;
 }
 
 .in-house_gallery{
@@ -27,6 +30,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
+    background-color: #ccd3ce;
     margin-left: 20px;
     margin-right: 5px;
 }

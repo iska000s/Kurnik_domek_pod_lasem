@@ -57,6 +57,18 @@
 #price{
     height: 20px;
 }
+.additional-box{
+    width: 100%;
+    background-color: #ccd3ce;
+    margin-block: 10px;
+}
+.additional_info{
+    width: 80%;
+    justify-self: center;
+    margin-block: 20px;
+    font-size: 9px;
+    
+}
 
 @media screen and (max-width: 450px) {
     #price-href{
@@ -74,3 +86,4 @@
     }
 
 }
+
