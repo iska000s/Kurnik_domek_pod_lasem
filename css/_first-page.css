@@ -43,22 +43,19 @@ background-position: center center;
 background-attachment: fixed;
 width: 102vw;
 height: 99vh;
-animation: zoom-forest 100s infinite linear;
+animation: zoom-forest 15s infinite linear;
 }
 
 
 @keyframes zoom-forest{
     0%{
-        background-size: 100%;
-        /* scale: 100%; */
-    }
+transform: translateX(0px);    
+}
     50%{
-        background-size: 140%;
-        /* scale: 105%; */
+        transform: translateX(-10px);    
     }
     100%{
-        background-size: 100%;
-        /* scale: 100%; */
+        transform: translateX(0px);    
     }
 }
 
