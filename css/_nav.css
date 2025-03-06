@@ -40,7 +40,7 @@
     height: 100%;
 }
 
-a:hover{
+nav a:hover{
     /* transform: scale(1.1); */
     text-decoration: underline solid rgb(94, 93, 93) 0.3px;
     text-underline-offset: 2px;
