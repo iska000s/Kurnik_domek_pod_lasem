@@ -16,9 +16,13 @@
 }
 
 .instagram{
-    padding-right: 5px;
+  padding: 15px;
+  padding-right: 25px;
 }
-
+.facebook{
+  padding: 15px;
+  padding-right: 25px;
+}
 .fa-brands{
     color: white;
     font-size: 20px;
@@ -74,17 +78,20 @@
     bottom:0;
   }
   #cookiebanner p { 
-    font-size:6px; 
-    line-height:1.4;
+    font-size: 14px; 
+    line-height: 1.4;
+    margin-left: 20px;
+    padding: 10px;
   }
   #cookiebanner .c-header { 
     text-transform:uppercase; 
     color:#fff; 
-    margin-bottom:2px;
+    margin-bottom: 2px;
   }
   #cookiebanner p.c-message {
-    font-size:6px; 
+    font-size: 12px; 
     color:#999;
+    margin-left: 20px;
   }
   #cookiebanner a { 
     font-weight:bold; 
@@ -108,7 +115,7 @@
     vertical-align:middle;
     margin-top:2px;
     color:#666;
-    font-size:6px;
+    font-size:12px;
     -o-transition:.2s;
     -ms-transition:.2s;
     -moz-transition:.2s;

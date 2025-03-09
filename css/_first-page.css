@@ -12,14 +12,14 @@
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
-    padding-left: 10vw;
+    padding: 0 5vw 20px 5vw;
     gap: 10vw;
     flex-direction: row;
     text-decoration: none;
 }
 
 .stripe-adress .fa-brands{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 

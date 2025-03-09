@@ -1,4 +1,5 @@
 
+
 const images = [
   { id: 1, src: 'images/dom/1.jpg' },
   { id: 2, src: 'images/dom/2.jpg' },
@@ -58,8 +59,6 @@ function loadImages() {
     console.error("Index out of bounds for the images array");
   }
 
-
-  
   // Ładowanie miniatur (8 miniatur)
   const thumbnailsContainer = document.querySelector('.thumbnails');
   thumbnailsContainer.innerHTML = ''; // Czyszczenie poprzednich miniatur
@@ -84,7 +83,6 @@ function loadImages() {
       imgElement.src = images[j].src;
       imgElement.alt = `Thumbnail ${images[j].id}`;
       imgElement.dataset.index = j;
-  
       thumbnailsContainer.appendChild(imgElement);
     }
   }
@@ -134,9 +132,6 @@ document.querySelector('.next').addEventListener('click', () => {
 
 
 loadImages();
-
-
-
 
 
 
