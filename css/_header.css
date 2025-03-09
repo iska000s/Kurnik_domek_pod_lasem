@@ -5,7 +5,8 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    /* transform: translateX(95px); */
+    transform: translateX(90vw);
+    margin-top: 20px;
 }
 .header1{
     position: sticky;
@@ -17,12 +18,11 @@
  
 }
 .logo-main{
-    line-height: 1.3rem;
-    font-size: 1.5rem;
-    
+    line-height: 27px;
+    font-size: 35px;
 }
 .logo-second{
-    font-size: 0.5rem;
+    font-size: 13px;
     margin-left: 1px;
 }
 
@@ -32,17 +32,19 @@
 
 @media screen and (max-width: 1500px) {
 #logo{
-
     transform: translateX(85vw);
     width: 20vw;
+    margin-top: 20px;
 }
 }
   
 @media screen and (max-width: 700px){
     #logo{
-        transform: translateX(84vw);
+        transform: translateX(80vw);
         width: 20vw;
+        margin-top: 15px;
     }
+    
 }
 
 @media screen and (max-width: 450px) {
@@ -65,7 +67,7 @@
     #logo{
         transform: translateX(75vw);
         width: 20vw;
-
+        margin-top: 15px;
     }
     .logo-main{
         line-height: 5.3vw;

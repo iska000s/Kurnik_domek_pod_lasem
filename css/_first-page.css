@@ -1,7 +1,7 @@
 .stripe{
     display: flex;
     width: 100%;
-    height: 10px;
+    height: 14px;
     background-color: black;
     z-index: 100;
     top: 0;
@@ -9,9 +9,9 @@
 }
 .stripe-adress{
     color: white;
-    font-size: 5px;
+    font-size: 12px;
     font-weight: 600;
-    line-height: 10px;
+    line-height: 12px;
     padding-left: 10vw;
     gap: 10vw;
     flex-direction: row;
@@ -19,19 +19,16 @@
 }
 
 .stripe-adress .fa-brands{
-    font-size: 5px;
+    font-size: 12px;
 }
 
 
 .first-page{
-    /* position: relative; */
-    /* top: -11vh; */
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 92vh;
     width: 100%;
     z-index: 0;
-    /* position: absolute; */
 }
 .first-page_img{
 position: absolute;
@@ -41,7 +38,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
-width: 102vw;
+width: 100vw;
 height: 99vh;
 animation: zoom-forest 15s infinite linear;
 }
@@ -66,13 +63,14 @@ transform: translateX(0px);
     position: absolute;
     bottom: -2vh;
     animation: dot_shadow 2s infinite linear;
+    z-index: 100;
 }
 #dot{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.2rem;
-    width: 1.2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color:rgb(255, 255, 255);
     border-radius: 50%;
     box-shadow: rgb(255, 255, 255) 1px 0px 1.5px;
@@ -80,24 +78,10 @@ transform: translateX(0px);
 
 #arrow{
     color: black;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
-/* 
- .nav-href{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: absolute;
-    bottom: -5vh;
-}
-#dot{
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color:rgb(255, 255, 255);
-    border-radius: 50%;
-    box-shadow: rgb(255, 255, 255) 1px 0px 1.5px;
-} */
+
 
 @keyframes dot_shadow{
     0%{

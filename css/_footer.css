@@ -5,7 +5,7 @@
     width: 95vw;
     height: 50px;
     color: white;
-    font-size: 6px;
+    font-size: 12px;
     justify-content: space-between;
     padding-inline: 5vw;
 
@@ -21,7 +21,7 @@
 
 .fa-brands{
     color: white;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .footer-policy{
@@ -32,6 +32,9 @@
 
 
 @media screen and (max-width:720px) {
+  .footer-container{
+    font-size: 10px;
+  }
     #cookiebanner a.c-button { 
       width:100%; 
       box-sizing:border-box; 

@@ -17,9 +17,9 @@
 .surroundings_text{
     width: 90vw;
     background-color: white;
-    font-size: 1.4vw;
+    font-size: 18px;
+    line-height: 26px;
     font-weight: 200;
-    line-height: 3vw;
     padding-block: 10px;
     z-index: 60;
 }

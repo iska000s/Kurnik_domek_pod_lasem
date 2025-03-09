@@ -1,13 +1,14 @@
 #contact{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     padding-top: 2.5rem;
     height: 40vh;
-    font-size: 10px;
-    font-weight: 200;
-    gap: 10px;
     width: 80vw;
-    justify-content: space-around;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 200;
 }
 
 .contact-form{
@@ -15,19 +16,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:40px;
+    /* height:40px; */
+    width: 50%;
     gap: 10px;
+    
 }
 
 .contact-button{
     background-color: #788D7F;
     color: white;
-    height: 20px;
-    width: 154px;
+    /* height: 40px; */
+    width: 100%;
     border: none;
     padding: 2px;
     cursor: pointer;
-    font-size: 8px;
+    /* font-size: 15px; */
     font-weight: 200;
     border-radius: 5px;
     align-self: flex-end;
@@ -35,7 +38,6 @@
 
 .contact-button:hover{
     font-weight: 600;
-    font-size: 8px;
 }
 
 input{
@@ -45,16 +47,17 @@ input{
 
 .form-element{
     display: flex;
+    width: 100%;
 }
 .contact-label{
-    width: 50px;
+    width: 70px;
 }
 
 input[type=text], input[type=email]{
-    font-size: 9px;
-    color: white;
+    font-size: 18px;
+    line-height: 26px;    color: white;
     outline: none;
-    width: 150px;
+    width: 100%;
   }
 
 input[type=text]:focus, input[type=email]:focus {
@@ -67,8 +70,10 @@ input[type="checkbox"], input[type="radio"]{
 
 .checbox-label{
     display: flex;
-    width: 200px;
-    font-size: 6px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 13px;
+    margin-block: 20px;
 }
 
 @media screen and (max-width: 450px) {

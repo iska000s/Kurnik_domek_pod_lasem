@@ -4,8 +4,9 @@
 
 .gallery-container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    height: 86vh;
+    min-height: 74vh;
     width: 75vw;
     padding-top: 5px;
 }
@@ -19,11 +20,7 @@
     overflow-x: hidden;
     scrollbar-width: none;
 }
-/* #large2{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-} */
+
 
 .large-images img {
     height: 60vh;
@@ -32,35 +29,6 @@
     border-radius: 10px;
 }
 
-/* .thumbnail-carousel {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    gap: 10px;
-    position: relative;
-} */
-
-.thumbnails {
-    /* display: flex;
-    overflow-x: auto;
-    height: 40px;
-    gap: 10px;
-    flex-grow: 1;
-    scroll-behavior: smooth;
-    scrollbar-width: none; */
-}
-
-/* .thumbnail {
-    height: 40px;
-    border-radius: 5px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.2s, border-color 0.2s;
-}
-
-.thumbnail:hover {
-    transform: scale(1.1);
-} */
 
 .gallery-button {
     background-color: white;
@@ -83,17 +51,77 @@
     color: white;
 }
 
+.thumbnail-container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 10px;
+    position: relative;
+}
 
-@media screen and (max-width: 1500px) {
+.thumbnails {
+    display: flex;
+    overflow-x: auto;
+    height: 40px;
+    gap: 10px;
+    flex-grow: 1;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.thumbnail-container button {
+    background-color: transparent;
+    cursor: pointer;
+    height: 40px;
+    width: 30px;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.thumbnails img {
+    height: 36px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+    scroll-behavior: smooth;
+
+}
+
+.thumbnails img.active {
+    border: 1px solid #333;
+}
+
+
+.thumbnail {
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.large-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 20px;
+    overflow: hidden; /* Aby ograniczyć widoczność poza kontenerem */
+}
+
+
+
+/* @media screen and (max-width: 1500px) {
 
 }
   
 @media screen and (max-width: px){
 
-}
+} */
 
 @media screen and (max-width: 450px) {
-
     #gallery {
         height: 85vh;
         width: 90vw;
@@ -139,100 +167,4 @@
     }
 }
 
-
-
-
-
-/* .gallery-container {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 50px;
-}
-
-.large-images {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.large-images img {
-    width: 30%;
-    margin: 0 10px;
-    border: 5px solid #ccc;
-} */
-
-.thumbnail-container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    display: flex;
-    align-items: center;
-    height: 40px;
-    gap: 10px;
-    position: relative;
-}
-
-.thumbnails {
-    /* display: flex;
-    overflow-x: auto;
-    max-width: 80%;
-    padding-bottom: 10px;
-    margin: 0 10px; */
-    display: flex;
-    overflow-x: auto;
-    height: 40px;
-    gap: 10px;
-    flex-grow: 1;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-
-.thumbnail-container button {
-    background-color: transparent;
-    cursor: pointer;
-    height: 40px;
-    width: 30px;
-    padding: 5px;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-}
-
-.thumbnails img {
-    /* width: 100px;
-    height: 75px;
-    object-fit: cover;
-    margin: 0 5px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: border 0.3s; */
-    height: 36px;
-    border-radius: 5px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.2s, border-color 0.2s;
-    scroll-behavior: smooth;
-
-}
-
-.thumbnails img.active {
-    border: 1px solid #333;
-}
-
-
-.thumbnail {
-    height: 40px;
-    border-radius: 5px;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-.large-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    margin-bottom: 20px;
-    overflow: hidden; /* Aby ograniczyć widoczność poza kontenerem */
-}
 
