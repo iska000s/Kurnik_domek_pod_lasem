@@ -104,8 +104,9 @@
   #cookiebanner a.c-button { 
     display: flex;
     align-content: center;
+    justify-content: center;
     width: 40px;
-    height: 15px;
+    height: 40px;
     border-radius: 1px;
     background-color: rgb(255,255,255);
     border:1px solid rgb(221,221,221);
@@ -121,6 +122,10 @@
     -moz-transition:.2s;
     -webkit-transition:.2s;
     transition:.2s;
+    cursor: pointer;
+    margin-right: 20vw;
+    font-size: 15px;
+    text-align: center;
   }
   
   #cookiebanner a.c-button:hover { 
