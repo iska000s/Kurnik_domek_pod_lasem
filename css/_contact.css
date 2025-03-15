@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     padding-top: 2.5rem;
-    height: 40vh;
+    height: 70vh;
     width: 80vw;
     gap: 10px;
     font-size: 18px;
@@ -85,13 +85,22 @@ input[type="checkbox"], input[type="radio"]{
 .mail-text{
     height: 100px;
 }
-
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
 
 @media screen and (max-width: 450px) {
     #contact{
         flex-direction: column;
         padding-top: 0rem;
-        height: 50vh;
+        height: 70vh;
         width: 80vw;
         gap: 20px;
         justify-content: flex-start;
@@ -144,7 +153,7 @@ input[type="checkbox"], input[type="radio"]{
         font-size: 6px;
         color: white;
         outline: none;
-        width: 50vw;
+        /* width: 50vw; */
       }
     
       input[type=text]:focus, input[type=email]:focus {
@@ -154,5 +163,6 @@ input[type="checkbox"], input[type="radio"]{
     .checbox-label span{
         height: 80px;
     }
+
 }
 

@@ -64,10 +64,6 @@ body{
 }
 
 @media screen and (max-width: 450px) {
-    html{
-        overflow-x: hidden;
-
-    }
 }
 
 .hide{

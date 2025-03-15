@@ -52,7 +52,7 @@
       </a>
     </section>
     <span id="nav-href"></span>
-    <nav id="aside-container" class="aside-container nav">
+    <!-- <nav id="aside-container" class="aside-container nav">
       <ul id="menu_container" class="menu_container">
         <li id="menu_element" class="menu_element menu-description">
           <a class="menu-description-a" href="#description-href"> Opis </a>
@@ -77,7 +77,7 @@
           <a href="#contact-href"> Kontakt </a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
     <main id="main" class="main">
       <!-- OPIS -->
       <span id="description-href"></span>
@@ -235,7 +235,7 @@
       <section id="contact">
         <h2 class="header2">Kontakt</h2>
         
-        <form action="auszynski@gmail.com" method="get" id="contact-form" class="contact-form">
+        <form action="auszynski@gmail.com" method="post" id="contact-form" class="contact-form">
           <span class="form-element">
           <label class="contact-label" for="name">Imię: </label>
           <input type="text" id="name" name="name" required />
@@ -245,8 +245,8 @@
           <input type="email" id="email" name="email" required />
         </span>
         <span class="form-element mail-box">
-          <label class="contact-label mail-title" for="text">Wpisz wiadomość</label>
-          <input class="mail-text" type="text">
+          <!-- <label class="contact-label mail-title" for="text">Wpisz wiadomość</label> -->
+          <textarea id="message" placeholder="Wpisz wiadomość"></textarea>
         </span>
         <label class="checbox-label">
 <!-- ZROBIC ŻE JAK NIE JEST ZAZNACZONE TO WYSKOCZY KOMUNIKAT ZE NIE WYŚLE -->
@@ -259,7 +259,7 @@
     </main>
     
     <footer class="footer-container">
-      <p>&copy; 2025 Kurnik domek pod lasem</p>
+      <p>&copy; 2025 Kurnik - domek pod lasem</p>
       Zapraszamy do "Kurnika" – miejsca, gdzie czas płynie wolniej, a gwiazdy świecą jaśniej!
       <a class="footer-policy" href="polityka-prywatnosci.html">Polityka prywatności i cookies</a>
       <div class="social-media">

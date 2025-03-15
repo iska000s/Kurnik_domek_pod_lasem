@@ -81,6 +81,7 @@
 @media screen and (max-width: 450px) {
     #price-container2{
         height: 50vh;
+        width: 95;
     }
     .price-list_box{
         height: 100%;
