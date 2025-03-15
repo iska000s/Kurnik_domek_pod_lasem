@@ -57,8 +57,9 @@
     } 
     .in-house_content{
         /* min-width: 60vw; */
-        padding: 5px;
+        padding: 10px;
         margin-bottom: 0;
+        width: 95vw;
     }
     .in-house_text{
         font-size: 3.5vh;

@@ -28,9 +28,10 @@
     
     .surroundings_text{
         width: 95vw;
-        font-size: 2vw;
-        line-height: 4vw;
+        font-size: 3.5vh;
+        line-height: 4.5vh;
         padding-block: 10px;
+        padding-inline: 10px;
     }
 }
 
@@ -38,8 +39,10 @@
     
     .surroundings_text{
         width: 95vw;
-        font-size: 3vw;
-        line-height: 5vw;
+        font-size: 3.5vh;
+        line-height: 4.5vh;
         padding-block: 10px;
+        padding-inline: 10px;
+
     }
 }

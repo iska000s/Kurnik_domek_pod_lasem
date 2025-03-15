@@ -52,7 +52,10 @@
     }   
     #cookiebanner p.c-message { 
       margin-bottom:5px;
-    }   
+    } 
+    .social-media{
+      padding-right: 0;
+    }  
   }    
   
   @media screen and (min-width:720px) {
@@ -63,6 +66,9 @@
     #cookiebanner #c-right { 
       float:right; 
     }
+    .social-media{
+      padding-right: 0;
+    }  
   }
   
   #cookiebanner { 
