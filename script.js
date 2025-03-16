@@ -71,10 +71,10 @@ function loadImages() {
       imgElement.src = images[i].src;
       imgElement.alt = `Thumbnail ${images[i].id}`;
       imgElement.dataset.index = i;
-      console.log(images.length);
-      console.log(currentIndex);
-      console.log(  imgElement.dataset.index);
-      console.log(images[i]);
+      // console.log(images.length);
+      // console.log(currentIndex);
+      // console.log(  imgElement.dataset.index);
+      // console.log(images[i]);
       thumbnailsContainer.appendChild(imgElement);
 
     } else if(i>=images.length){
@@ -188,18 +188,33 @@ window.onload = showCookieBanner;
 
 
 // POKAZANIE MENU PO NAJECHANIU NA OPIS
-const descriptionMenu = document.querySelector('.menu-description');
+const descriptionMenu = document.querySelector('.menu-description-a');
 const descriptionMenuList = document.querySelector('.menu-description-list');
-descriptionMenu.addEventListener('mouseover', (e)=> {
-  showMenu();
-})
-descriptionMenu.addEventListener('mouseout', (e)=> {
-  hideMenu();
-})
+// descriptionMenu.addEventListener('mouseover', (e)=> {
+//   showMenu();
+// })
+// descriptionMenu.addEventListener('mouseout', (e)=> {
+//   hideMenu();
+// })
 
-function showMenu() {
-  descriptionMenuList.style.display = "flex";
-}
-function hideMenu() {
-  descriptionMenuList.style.display = "none";
-}
+
+// function showMenu () {
+//   descriptionMenuList.style.display = "flex";
+// }
+
+// function hideMenu () {
+//   descriptionMenuList.style.display = "none";
+// }
+
+
+  descriptionMenu.addEventListener('click', (e) => {
+    console.log("tets");
+    if (descriptionMenuList.style.display == "none"){
+      descriptionMenuList.style.display = "flex";
+      console.log("TEST")
+    } else{
+      descriptionMenuList.style.display = "none";
+      console.log("test")
+    }
+  })
+

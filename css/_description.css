@@ -69,7 +69,7 @@ video{
         margin-bottom: 0;
     }
     .description_text{
-        font-size: 3.5vh;
+        font-size: 2.5vh;
         font-weight: 200;
         min-width: 45vw;
         justify-content: space-around;
@@ -94,7 +94,7 @@ video{
     .description_container{
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         height: auto;
         min-height: auto;
         background-color: #788D7F;
@@ -112,10 +112,8 @@ video{
         height: 100%;
     }
     .description_text{
-        font-size: 6px;
-        /* font-weight: 200; */
+        font-size: 2.5vh;
         margin-top: 10px;
-        /* margin-inline: 3px; */
         line-height: 9px;
         width: 90vw;
         padding-bottom: 10px;

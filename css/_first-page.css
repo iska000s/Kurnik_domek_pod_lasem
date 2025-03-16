@@ -1,6 +1,6 @@
 .stripe{
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 14px;
     background-color: black;
     z-index: 100;
@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     height: 92vh;
-    width: 100%;
+    width: 99vw;
     z-index: 0;
 }
 .first-page_img{
@@ -45,20 +45,20 @@ animation: zoom-forest 15s infinite linear;
 
 
 @keyframes zoom-forest{
-    0%{
+0%{
 transform: translateX(0px);    
 }
-    50%{
-        transform: translateX(-10px);    
-    }
-    100%{
-        transform: translateX(0px);    
-    }
+50%{
+transform: translateX(-10px);    
+}
+100%{
+transform: translateX(0px);    
+}
 }
 
 .dot-arrow{
     display: flex;
-    width: 100%;
+    width: 99%;
     justify-content: center;
     position: absolute;
     bottom: -2vh;
@@ -82,43 +82,38 @@ transform: translateX(0px);
 }
 
 
-/* 
-@keyframes dot_shadow{
-    0%{
-        bottom: -1.8vh;
-
-    }
-    50%{
-        bottom: -2.6vh;
-
-    }
-    100%{
-        bottom: -1.8vh;
-    }
-} */
-
-
 @media screen and (max-width: 1500px) {
 
 }
   
-@media screen and (max-width: 900px){
-
+@media screen and (max-width: 800px){
+    .stripe{
+        width: 100%;
+    }   
 }
 
 @media screen and (max-width: 450px) {
+
+    .stripe{
+        width: 100%;
+    }   
     .stripe-adress{
         font-size: 10px;
         font-weight: 600;
+        width: 100vw;
         line-height: 10px;
-        padding-left: 4vw;
+        padding: 0 0 0 4vw;
+        gap: 0;
     }
     .first-page{
         height: 88vh;
+        /* width: 100%; */
     }
     .first-page_img{
         height: 92vh;
-        }
+        /* width: 100%; */
+        /* animation: none; */
+    }
     #dot{
         height: 3vh;
         width: 3vh;
@@ -126,9 +121,6 @@ transform: translateX(0px);
     .dot-arrow{
         height: 5vh;
         bottom: 3vh;
-
-        /* margin-bottom: 40px; */
-        /* position: absolute; */
     }
 
     #arrow{
@@ -136,15 +128,15 @@ transform: translateX(0px);
     }
     @keyframes dot_shadow{
         0%{
-            bottom: 3.5vh;
+            bottom: 1.5vh;
     
         }
         50%{
-            bottom: 4vh;
+            bottom: 2vh;
     
         }
         100%{
-            bottom: 3.5vh;
+            bottom: 1.5vh;
         }
     }
 

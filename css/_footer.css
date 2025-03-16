@@ -33,20 +33,50 @@
   color: white;
 }
 
+@media screen and (max-width:900px) {
+  .social-media{
+    padding-right: 0;
+  }  
 
-
-@media screen and (max-width:720px) {
   .footer-container{
-    display: flex;
-    align-items: center;
-    background-color: black;
-    width: 100vw;
+    width: 90vw;
     height: 50px;
     color: white;
-    font-size: 10px;
-    padding-inline: 0.5vw;
+    font-size: 12px;
+    justify-content: space-between;
+    padding-inline: 5vw;
+}
+  .instagram{
+    padding: 15px;
+    padding-right: 5px;
+  }
+  .facebook{
+    padding: 15px;
+    padding-right: 5px;
+  }
 }
 
+@media screen and (max-width:780px) {
+  .social-media{
+    padding-right: 0;
+  }  
+
+  .footer-container{
+    width: 90vw;
+    height: 50px;
+    color: white;
+    font-size: 12px;
+    justify-content: space-between;
+    padding-inline: 5vw;
+}
+  .instagram{
+    padding: 15px;
+    padding-right: 5px;
+  }
+  .facebook{
+    padding: 15px;
+    padding-right: 5px;
+  }
     #cookiebanner a.c-button { 
       width:100%; 
       box-sizing:border-box; 
@@ -61,12 +91,9 @@
     #cookiebanner p.c-message { 
       margin-bottom:5px;
     } 
-    .social-media{
-      padding-right: 0;
-    }  
   }    
   
-  @media screen and (min-width:720px) {
+  @media screen and (min-width:780px) {
     #cookiebanner #c-left { 
       float:left; 
       max-width:80%;

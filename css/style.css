@@ -16,7 +16,7 @@
 
 
 body::-webkit-scrollbar {
-    width: 2px;
+    width: 3px;
     height: 8px;
     background-color: white;
   }
@@ -26,8 +26,8 @@ body::-webkit-scrollbar-thumb {
   }
 
 html{
-    width: 100vw;
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 body{
@@ -55,15 +55,32 @@ body{
     width: 100vw;
 }
 
+
 @media screen and (max-width: 1500px) {
 
 }
   
 @media screen and (max-width: 900px){
-
+    html, body{
+        width: 100%;
+        max-width: 99vw;
+        /* overflow-x: hidden; */
+    }
+    .main{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
+
+    html, body{
+        width: 100%;
+        max-width: 99vw;
+        /* overflow-x: hidden; */
+    }
+    .main{
+        width: 100%;
+    }
 }
 
 .hide{

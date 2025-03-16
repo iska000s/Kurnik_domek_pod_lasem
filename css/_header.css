@@ -30,18 +30,27 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 1500px) {
+/* @media screen and (max-width: 1500px) {
 #logo{
     transform: translateX(85vw);
     width: 20vw;
     margin-top: 20px;
 }
-}
-  
-@media screen and (max-width: 700px){
+} */
+ 
+@media screen and (max-width: 900px){
     #logo{
         transform: translateX(80vw);
-        width: 20vw;
+        width: 13vw;
+        margin-top: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 780px){
+    #logo{
+        transform: translateX(70vw);
+        width: 13vw;
         margin-top: 15px;
     }
     

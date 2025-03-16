@@ -96,6 +96,19 @@ textarea {
     resize: none;
   }
 
+@media screen and (max-width: 780px){
+    #contact{
+        flex-direction: column;
+        padding-top: 0rem;
+        height: 80vh;
+        width: 80vw;
+        gap: 20px;
+        justify-content: flex-start;
+        margin-top: 29px;
+    }
+}
+  
+
 @media screen and (max-width: 450px) {
     #contact{
         flex-direction: column;
@@ -119,12 +132,12 @@ textarea {
     .contact-button{
         background-color: #788D7F;
         color: white;
-        height: 20px;
+        height: 23px;
         width: 80vw;
         border: none;
         padding: 2px;
         cursor: pointer;
-        font-size: 6px;
+        font-size: 18px;
         font-weight: 200;
         border-radius: 5px;
         align-self: flex-end;
@@ -132,7 +145,7 @@ textarea {
     
     .contact-button:hover{
         font-weight: 600;
-        font-size: 6px;
+        font-size: 18px;
     }
     
     input{
@@ -146,11 +159,11 @@ textarea {
     }
     .contact-label{
         width: 30vw;
-        font-size: 10px;
+        font-size: 18px;
     }
     
     input[type=text], input[type=email]{
-        font-size: 6px;
+        font-size: 18px;
         color: white;
         outline: none;
         /* width: 50vw; */

@@ -123,7 +123,7 @@
 @media screen and (max-width: 450px) {
     #gallery {
         /* height: 85vh; */
-        width: 98vw;
+        width: 93vw;
         margin-right: 5px;
         padding-block: 2vw;
         align-items: center;
@@ -134,21 +134,19 @@
     .large-images {
         gap: 2%;
         margin-bottom: 5px;
-        width: 98vw;
+        width: 93vw;
     }
     .large-images img {
         height: 60vh;
-        width: 10vw;
+        width: 8vw;
         border-radius: 10px;
     }
     
     #large2 {
         height: 60vh;
-        width: 90vw;
+        width: 82vw;
         border-radius: 10px;
     }
-    
-    
     
     .thumbnail-carousel {
         height: 15vh;
@@ -160,15 +158,15 @@
         gap: 9px;
         flex-grow: 1;
     }
-    
     .thumbnail {
-        height: 40px;
+        height: 12vh;
     }
-    
+    .thumbnails img {
+        height: 12vh;
+    }
     .thumbnail:hover {
         transform: scale(1.1);
     }
-    
     .gallery-button {
         height: 40px;
         width: 30px;
