@@ -14,7 +14,6 @@
 }
 
 .price-list_box{
-    /* height: 100%; */
     width: 48vw;
     height: 85vh;
     background-color: #788d7f;
@@ -22,7 +21,7 @@
 }
 .price-box{
     height: 100%;
-    width: 30vw;
+    width: 50%;
     background-image: url(../images/okolica/price.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -81,24 +80,32 @@
 @media screen and (max-width: 450px) {
     #price-container2{
         height: 50vh;
-        width: 95;
+        width: 90vw;
+        max-width: 90vw;
+        margin: 10px;
+       padding-inline: 10px;
+    }
+    
+    .price-box{
+        width: 100%;
     }
     .price-list_box{
         height: 100%;
+        padding-inline: 10px;
+
     }
     #price-href{
         transform: translateY(-15px);
+    }
+
+    #price{
+        text-align: center;
     }
     .header3{
         padding-left: 5px;
         padding-bottom: 20px;
     }
-    #price-container2{
-        max-width: 80vw;
-        /* max-height: 80vh; */
-        margin: 10px;
-        padding-inline: 10px;
-    }
+
     .additional-box{
         width: 95vw;
         background-color: #ccd3ce;
