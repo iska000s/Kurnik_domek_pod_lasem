@@ -9,7 +9,41 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 200;
+    align-items: start;
 }
+.contact-adress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height:40px; */
+    width: 60%;
+    gap: 40px;
+    color: black;
+    font-weight: 500;
+}
+.contact-adress h2{
+    font-size: 30px;
+}
+.contact-adress p{
+    margin-bottom: 50px;
+
+}
+.contact-adress_mail, .contact-adress_tel{
+    font-weight: 600;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-adress .fa-instagram, .contact-adress .fa-facebook{
+    color: black;
+    font-size: 30px;
+}
+
 
 .contact-form{
     display: flex;
