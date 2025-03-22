@@ -21,18 +21,6 @@
 
 } */
 
-@keyframes zoom{
-    0%{
-        background-size: 100%;
-    }
-    50%{
-        background-size: 120%;
-    }
-    100%{
-        background-size: 100%;
-    }
-}
-
 .adress{
     /* position: absolute; */
     text-align: center;
@@ -64,6 +52,44 @@
     opacity: 70%;
 }
 
+@keyframes zoom{
+    0%{
+        background-size: 100%;
+    }
+    50%{
+        background-size: 120%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #location-href{
+        transform: translateY(-20px);
+    }
+    #location{
+        max-height: 40vh;
+        min-height: 30vh;
+        width: 100%;
+        max-width: 95vw;
+        background-image: url('../images/map.png');
+        opacity: 80%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .link{
+        max-height: 40vh;
+        min-height: 30vh;
+        width: 100%;
+        max-width: 95vw;
+        background-image: none;
+        animation: none;
+
+    }
+}
 
 @media screen and (max-width: 450px) {
     #location-href{
@@ -86,6 +112,8 @@
         width: 100%;
         max-width: 95vw;
         background-image: none;
+        animation: none;
+
     }
 }
 

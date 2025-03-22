@@ -1,28 +1,26 @@
+/* POPRAWIONE */
+
+
 .footer-container{
     display: flex;
     align-items: center;
-    background-color: black;
-    /* width: 99vw; */
+    justify-content: space-between;
     height: 50px;
+    background-color: black;
     color: white;
     font-size: 12px;
-    justify-content: space-between;
     padding-inline: 5vw;
-
 }
 
 .social-media{
     padding-right: 40px;
 }
 
-.instagram{
-  padding: 15px;
-  padding-right: 25px;
+.instagram, 
+.facebook {
+  padding: 15px 25px 15px 15px;
 }
-.facebook{
-  padding: 15px;
-  padding-right: 25px;
-}
+
 .fa-brands{
     color: white;
     font-size: 20px;
@@ -33,142 +31,195 @@
   color: white;
 }
 
-@media screen and (max-width:900px) {
+
+#cookiebanner { 
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  height: 15vh;
+  width: 100%; 
+  background-color:rgb(35, 35, 35); 
+  opacity: 0.9; 
+  padding: 5px 5px 50px 5px;
+  z-index: 2147483645; 
+  bottom: 0;
+}
+
+#cookiebanner .c-header { 
+  text-transform:uppercase; 
+  color:#fff; 
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+#cookiebanner p.c-message {
+  font-size: 13px; 
+  line-height: 1.4;
+  color:#999;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+#cookiebanner a { 
+  font-weight:bold; 
+  color:#999;
+}
+
+#cookiebanner a:hover { 
+  color:#fff;
+}
+
+#cookiebanner a.c-button { 
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  border-radius: 1px;
+  background-color: rgb(255,255,255);
+  border: 1px solid rgb(221,221,221);
+  padding: 2px 6px;
+  margin-top: 2px;
+  /* margin-right: 20vw; */
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  color:#666;
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  cursor: pointer;
+}
+
+#cookiebanner a.c-button:hover { 
+  color: black;
+}
+
+#c-right {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#c-left { 
+  float: left;
+}   
+
+
+@media screen and (max-width:900px) {  
   .social-media{
     padding-right: 0;
   }  
 
-  .footer-container{
-    width: 90vw;
-    height: 50px;
-    color: white;
-    font-size: 12px;
-    justify-content: space-between;
-    padding-inline: 5vw;
-}
-  .instagram{
-    padding: 15px;
-    padding-right: 5px;
-  }
+  .instagram,
   .facebook{
     padding: 15px;
     padding-right: 5px;
   }
-}
 
-@media screen and (max-width:780px) {
-  .social-media{
-    padding-right: 0;
-  }  
-
-  .footer-container{
-    width: 90vw;
-    height: 50px;
-    color: white;
-    font-size: 12px;
-    justify-content: space-between;
-    padding-inline: 5vw;
-}
-  .instagram{
-    padding: 15px;
-    padding-right: 5px;
-  }
-  .facebook{
-    padding: 15px;
-    padding-right: 5px;
-  }
-    #cookiebanner a.c-button { 
-      width:100%; 
-      box-sizing:border-box; 
-      text-align:center; 
-      margin-bottom:5px;} 
-    #c-right { 
-      float:none;
-    }
-    #c-left { 
-      float:none;
-    }   
-    #cookiebanner p.c-message { 
-      margin-bottom:5px;
-    } 
-  }    
-  
-  @media screen and (min-width:780px) {
-    #cookiebanner #c-left { 
-      float:left; 
-      max-width:80%;
-    }
-    #cookiebanner #c-right { 
-      float:right; 
-    }
-    .social-media{
-      padding-right: 0;
-    }  
-  }
-  
   #cookiebanner { 
-    box-sizing: border-box; 
-    display: flex;
-    justify-content: space-between;
+    height: 20vh;
+    width: 100%; 
     background-color:rgb(35, 35, 35); 
-    opacity: 0.9; width:100%; 
-    padding: 5px;
-    /* position:absolute; */
-    position: fixed;
-    z-index: 2147483645; 
-    bottom:0;
+    opacity: 0.9; 
+    padding: 2px 2px 10px 2px;
   }
-  #cookiebanner p { 
-    font-size: 14px; 
-    line-height: 1.4;
-    margin-left: 20px;
-    padding: 10px;
-  }
+  
   #cookiebanner .c-header { 
     text-transform:uppercase; 
-    color:#fff; 
     margin-bottom: 2px;
+    margin-left: 2px;
+    padding: 3px;
   }
+
   #cookiebanner p.c-message {
     font-size: 12px; 
-    color:#999;
-    margin-left: 20px;
+    margin-left: 2px;
+    padding: 3px;
   }
-  #cookiebanner a { 
-    font-weight:bold; 
-    color:#999;
-  }
-  #cookiebanner a:hover { 
-    color:#fff;
-  }
-  
-  #cookiebanner a.c-button { 
-    display: flex;
-    align-content: center;
+
+  #c-right {
+    display: flex; 
+    align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 1px;
-    background-color: rgb(255,255,255);
-    border:1px solid rgb(221,221,221);
-    padding:2px 6px;
-    text-decoration:none;
-    display:inline-block;
-    vertical-align:middle;
-    margin-top:2px;
-    color:#666;
-    font-size:12px;
-    -o-transition:.2s;
-    -ms-transition:.2s;
-    -moz-transition:.2s;
-    -webkit-transition:.2s;
-    transition:.2s;
-    cursor: pointer;
-    margin-right: 20vw;
-    font-size: 15px;
-    text-align: center;
+    height: 100%;
+    width: 40%;
   }
   
-  #cookiebanner a.c-button:hover { 
-    color: black;
+  #c-left { 
+    width: 60%;
+  }   
+}
+
+
+@media screen and (max-width:780px) {
+  .footer-container{
+    padding-inline: 2vw;
   }
+
+  .social-media{
+    padding-right: 0;
+  }  
+
+  .instagram,
+  .facebook{
+    padding: 15px;
+    padding-right: 5px;
+  }
+
+  #cookiebanner { 
+    height: 20vh;
+    width: 100%; 
+    background-color:rgb(35, 35, 35); 
+    opacity: 0.9; 
+    padding: 2px 2px 10px 2px;
+  }
+  
+  #cookiebanner .c-header { 
+    text-transform:uppercase; 
+    margin-bottom: 2px;
+    margin-left: 2px;
+    padding: 3px;
+  }
+
+  #cookiebanner p.c-message {
+    font-size: 12px; 
+    margin-left: 2px;
+    padding: 3px;
+  }
+
+  #c-right {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+  }
+  
+  #c-left { 
+    width: 60%;
+  }   
+}    
+  
+@media screen and (max-width: 480px){
+  .footer-container{
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: flex-start;
+    padding-block: 20px;
+  }
+
+  /* .instagram,
+  .facebook{
+    padding: 10px;
+    padding-right: 2px;
+  } */
+}

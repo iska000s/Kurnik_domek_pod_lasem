@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /css/
+Allow: /kurnikdomekpodlasem/
+
+Sitemap: https://kurnikdomekpodlasem.pl/sitemap.xml

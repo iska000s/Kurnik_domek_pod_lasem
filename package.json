@@ -4,7 +4,7 @@
   },
   "scripts": {
     "prettier": "prettier --check '**/**/*.{js,jsx,ts,tsx,css}'",
-    "prettier:fix": "prettier --write '**/**/*.{js,jsx,ts,tsx,css}'"
+    "prettier:fix": "prettier --write '**/**/*.{js,jsx,ts,tsx,css}'",
 }
 }
 

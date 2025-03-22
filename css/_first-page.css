@@ -33,17 +33,17 @@
 .first-page_img{
 position: absolute;
 top: 0;
-background: url(/images/okolica/główne.JPEG);
+background: url(/images/główne.webp);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
-width: 100vw;
+width: 100%;
 height: 99vh;
-animation: zoom-forest 15s infinite linear;
+/* animation: zoom-forest 15s infinite linear; */
 }
 
-
+/* 
 @keyframes zoom-forest{
 0%{
 transform: translateX(0px);    
@@ -54,7 +54,7 @@ transform: translateX(-10px);
 100%{
 transform: translateX(0px);    
 }
-}
+} */
 
 .dot-arrow{
     display: flex;
@@ -111,8 +111,6 @@ transform: translateX(0px);
     }
     .first-page_img{
         height: 92vh;
-        /* width: 100%; */
-        /* animation: none; */
     }
     #dot{
         height: 3vh;
@@ -126,18 +124,14 @@ transform: translateX(0px);
     #arrow{
         font-size: 1.5vh;
     }
-    @keyframes dot_shadow{
+
+    /* @keyframes zoom-forest{
         0%{
-            bottom: 1.5vh;
-    
-        }
-        50%{
-            bottom: 2vh;
-    
+        transform: translateX(0);    
         }
         100%{
-            bottom: 1.5vh;
+        transform: translateX(0);    
         }
-    }
+ } */
 
 }

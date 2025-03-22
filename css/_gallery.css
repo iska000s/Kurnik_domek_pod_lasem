@@ -123,7 +123,7 @@
 @media screen and (max-width: 450px) {
     #gallery {
         /* height: 85vh; */
-        width: 93vw;
+        width: 95vw;
         margin-right: 5px;
         padding-block: 2vw;
         align-items: center;

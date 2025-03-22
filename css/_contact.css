@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-around;
     padding-top: 2.5rem;
-    height: 70vh;
+    /* height: 70vh; */
     width: 80vw;
     gap: 10px;
     font-size: 18px;
@@ -134,7 +134,7 @@ textarea {
     #contact{
         flex-direction: column;
         padding-top: 0rem;
-        height: 80vh;
+        height: auto;
         width: 80vw;
         gap: 20px;
         justify-content: flex-start;
@@ -146,7 +146,6 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height:40px; */
     width: 60%;
     gap: 40px;
     color: black;
@@ -173,7 +172,6 @@ textarea {
     color: black;
     font-size: 30px;
 }
-
 }
   
 
@@ -181,7 +179,7 @@ textarea {
     #contact{
         flex-direction: column;
         padding-top: 0rem;
-        height: 70vh;
+        height: auto;
         width: 80vw;
         gap: 20px;
         justify-content: flex-start;
@@ -190,7 +188,7 @@ textarea {
     .contact-form{
         display: flex;
         width: 80vw;
-        height:auto;
+        height: auto;
         gap: 10px;
     }
     #contact h2{

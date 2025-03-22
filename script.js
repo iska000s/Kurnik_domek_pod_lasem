@@ -1,5 +1,4 @@
 
-
 const images = [
   { id: 1, src: 'images/dom/1.jpg' },
   { id: 2, src: 'images/dom/2.jpg' },
@@ -134,9 +133,6 @@ document.querySelector('.next').addEventListener('click', () => {
 loadImages();
 
 
-
-
-
 // BANER COOKIE
 
 
@@ -207,14 +203,44 @@ const descriptionMenuList = document.querySelector('.menu-description-list');
 // }
 
 
+  // descriptionMenu.addEventListener('click', (e) => {
+  //   console.log("tets1");
+  //   if (descriptionMenuList.style.display === "none"){
+  //     descriptionMenuList.style.display = "flex";
+  //     console.log("TEST")
+  //   } else if (descriptionMenuList.style.display = "flex"){
+  //     descriptionMenuList.style.display = "none";
+  //     console.log("test2")
+  //   }
+  // })
+
+  // window.addEventListener('click', (e) => {
+  //   console.log("tets2");
+  //   if (descriptionMenuList.style.display = "flex"){
+  //     descriptionMenuList.style.display = "none";
+  //     console.log("TEST2")
+  //   }
+  // })
+
+
+
+  
   descriptionMenu.addEventListener('click', (e) => {
-    console.log("tets");
-    if (descriptionMenuList.style.display == "none"){
-      descriptionMenuList.style.display = "flex";
-      console.log("TEST")
-    } else{
-      descriptionMenuList.style.display = "none";
-      console.log("test")
+    if (descriptionMenuList.classList.contains("hidden")){
+      descriptionMenuList.classList.remove("hidden");   
+    } else {
+      descriptionMenuList.classList.add("hidden");
     }
   })
 
+  descriptionMenu.addEventListener('mouseover', (e) => {
+    if (descriptionMenuList.classList.contains("hidden")){
+      descriptionMenuList.classList.remove("hidden");   
+    }
+  })
+
+  window.addEventListener('click', (e) => {
+    if (!descriptionMenu.contains(e.target) && !descriptionMenuList.contains(e.target)) {
+      descriptionMenuList.classList.add("hidden");
+    }
+  });

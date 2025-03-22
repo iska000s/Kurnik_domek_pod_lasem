@@ -41,7 +41,8 @@
     cursor: pointer;
 }
 
-nav a:hover{
+nav a:hover,
+nav p:hover{
     /* transform: scale(1.1); */
     text-decoration: underline solid rgb(94, 93, 93) 0.3px;
     text-underline-offset: 2px;
@@ -51,13 +52,17 @@ nav a:hover{
     background-color: white;
     /* width: 100px; */
     height: 100px;
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     transform: translate(-3px, 0px);
     padding: 10px 10px 10px 5px;
     border-inline: black solid 0.2px;
     border-bottom: black solid 0.2px;
+}
+
+.hidden{
+    display: none;
 }
 
 
@@ -69,7 +74,7 @@ nav a:hover{
     .aside-container{
         height: 7.5vw;
         margin-top: 0;
-        width: 99vw;
+        width: 100vw;
     }
 
     .menu_container{
@@ -84,7 +89,7 @@ nav a:hover{
     .aside-container{
         height: 7.5vw;
         margin-top: 0;
-        width: 99vw;
+        width: 100vw;
     }
 
     .menu_container{
