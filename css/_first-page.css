@@ -38,12 +38,12 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
-width: 100%;
+width: 120%;
 height: 99vh;
-/* animation: zoom-forest 15s infinite linear; */
+animation: zoom-forest 15s infinite linear;
 }
 
-/* 
+
 @keyframes zoom-forest{
 0%{
 transform: translateX(0px);    
@@ -54,7 +54,7 @@ transform: translateX(-10px);
 100%{
 transform: translateX(0px);    
 }
-} */
+}
 
 .dot-arrow{
     display: flex;
@@ -90,6 +90,9 @@ transform: translateX(0px);
     .stripe{
         width: 100%;
     }   
+    .first-page_img{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -111,6 +114,7 @@ transform: translateX(0px);
     }
     .first-page_img{
         height: 92vh;
+        width: 100%;
     }
     #dot{
         height: 3vh;
@@ -125,13 +129,13 @@ transform: translateX(0px);
         font-size: 1.5vh;
     }
 
-    /* @keyframes zoom-forest{
+    @keyframes zoom-forest{
         0%{
         transform: translateX(0);    
         }
         100%{
         transform: translateX(0);    
         }
- } */
+ }
 
 }
