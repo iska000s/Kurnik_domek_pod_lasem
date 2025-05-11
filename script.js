@@ -1,4 +1,3 @@
-
 const images = [
   { id: 1, src: 'images/dom/1.jpg' },
   { id: 2, src: 'images/dom/2.jpg' },
@@ -30,32 +29,36 @@ const images = [
   { id: 28, src: 'images/dom/28.jpg' },
   { id: 29, src: 'images/dom/29.jpg' },
   { id: 30, src: 'images/dom/30.jpg' },
+  { id: 31, src: 'images/dom/31.jpg' },
+  { id: 32, src: 'images/dom/32.jpg' },
+  { id: 33, src: 'images/dom/33.jpg' },
+  { id: 34, src: 'images/dom/34.jpg' },
   // index 31
 ];
-
 
 let currentIndex = 0; // Indeks pierwszego duzego zdj zdjęcia
 
 function loadImages() {
-
   const imagesLength = images.length;
   // Check if the currentIndex and the next 2 indexes are within the array bounds
-  if (currentIndex < imagesLength && currentIndex + 1 < imagesLength &&  currentIndex > 0) {
-    document.getElementById('large1').src = images[currentIndex-1].src;
+  if (
+    currentIndex < imagesLength &&
+    currentIndex + 1 < imagesLength &&
+    currentIndex > 0
+  ) {
+    document.getElementById('large1').src = images[currentIndex - 1].src;
     document.getElementById('large2').src = images[currentIndex].src;
     document.getElementById('large3').src = images[currentIndex + 1].src;
-  } else if(currentIndex === 0){
-    document.getElementById('large1').src = images[images.length-1].src;
+  } else if (currentIndex === 0) {
+    document.getElementById('large1').src = images[images.length - 1].src;
     document.getElementById('large2').src = images[currentIndex].src;
     document.getElementById('large3').src = images[currentIndex + 1].src;
-  
-    } else if(currentIndex ===  imagesLength-1){
-      document.getElementById('large1').src = images[currentIndex-1].src;
-      document.getElementById('large2').src = images[currentIndex].src;
-      document.getElementById('large3').src = images[0].src;
-    }
-    else {
-    console.error("Index out of bounds for the images array");
+  } else if (currentIndex === imagesLength - 1) {
+    document.getElementById('large1').src = images[currentIndex - 1].src;
+    document.getElementById('large2').src = images[currentIndex].src;
+    document.getElementById('large3').src = images[0].src;
+  } else {
+    console.error('Index out of bounds for the images array');
   }
 
   // Ładowanie miniatur (8 miniatur)
@@ -63,9 +66,8 @@ function loadImages() {
   thumbnailsContainer.innerHTML = ''; // Czyszczenie poprzednich miniatur
 
   // Tworzenie 8 miniatur, przy czym druga miniatura to środkowe zdjęcie
-  for (let i = currentIndex; i <= images.length+9; i++) {
-
-    if(i<images.length){
+  for (let i = currentIndex; i <= images.length + 9; i++) {
+    if (i < images.length) {
       const imgElement = document.createElement('img');
       imgElement.src = images[i].src;
       imgElement.alt = `Thumbnail ${images[i].id}`;
@@ -75,16 +77,15 @@ function loadImages() {
       // console.log(  imgElement.dataset.index);
       // console.log(images[i]);
       thumbnailsContainer.appendChild(imgElement);
-
-    } else if(i>=images.length){
-      for(let j=0; j<=8; j++){
-      const imgElement = document.createElement('img');
-      imgElement.src = images[j].src;
-      imgElement.alt = `Thumbnail ${images[j].id}`;
-      imgElement.dataset.index = j;
-      thumbnailsContainer.appendChild(imgElement);
+    } else if (i >= images.length) {
+      for (let j = 0; j <= 8; j++) {
+        const imgElement = document.createElement('img');
+        imgElement.src = images[j].src;
+        imgElement.alt = `Thumbnail ${images[j].id}`;
+        imgElement.dataset.index = j;
+        thumbnailsContainer.appendChild(imgElement);
+      }
     }
-  }
   }
   // Ustawienie aktywnej miniatury (środkowa miniatura)
   updateActiveThumbnail();
@@ -100,88 +101,81 @@ function updateActiveThumbnail() {
   });
 }
 
-
-document.querySelector('.thumbnail-container').addEventListener('click', (event) => {
-  if (event.target.tagName === 'IMG') {
-    currentIndex = parseInt(event.target.dataset.index) ; // Zaktualizuj środkowy indeks
-    loadImages();
-  }
-});
+document
+  .querySelector('.thumbnail-container')
+  .addEventListener('click', (event) => {
+    if (event.target.tagName === 'IMG') {
+      currentIndex = parseInt(event.target.dataset.index); // Zaktualizuj środkowy indeks
+      loadImages();
+    }
+  });
 
 document.querySelector('.prev').addEventListener('click', () => {
   if (currentIndex > 0) {
     currentIndex--;
   } else {
     // Zapętlanie: po dojściu do pierwszego zdjęcia przechodzimy do ostatniego
-    currentIndex = images.length-1;
+    currentIndex = images.length - 1;
   }
   loadImages();
 });
 
 document.querySelector('.next').addEventListener('click', () => {
-  if (currentIndex < images.length -1) {
+  if (currentIndex < images.length - 1) {
     currentIndex++;
-  }
-  else {
+  } else {
     // Zapętlanie: po dojściu do ostatniego zdjęcia przechodzimy do pierwszego
     currentIndex = 0;
   }
   loadImages();
 });
 
-
 loadImages();
 
-
 // BANER COOKIE
-
-
 
 var cookieBannerSliderPos = 0;
 
 function showCookieBanner() {
-    var cookiebanner = document.getElementById("cookiebanner");
-    var dialogHeight = parseInt(cookiebanner.offsetHeight);
-    
-    // Sprawdzamy, czy użytkownik zaakceptował cookies
-    const cookiesAccepted = localStorage.getItem('cookiesAccepted');
-    if (!cookiesAccepted) {
-        cookiebanner.style.display = "block"; // Jeśli nie zaakceptowano, pokazujemy baner
-    } else {
-        cookiebanner.style.display = "none"; // Jeśli zaakceptowano, nie pokazujemy banera
-    }
-    
-    cookiebanner.style.bottom = (cookieBannerSliderPos - dialogHeight) + "px";
-    cookieBannerSliderPos += 4;
-    if (cookieBannerSliderPos < dialogHeight) {
-        setTimeout(function () {
-            showCookieBanner();
-        }, 1);
-    } else {
-        cookieBannerSliderPos = 0;
-        cookiebanner.style.bottom = "0px";
-    }
+  var cookiebanner = document.getElementById('cookiebanner');
+  var dialogHeight = parseInt(cookiebanner.offsetHeight);
+
+  // Sprawdzamy, czy użytkownik zaakceptował cookies
+  const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+  if (!cookiesAccepted) {
+    cookiebanner.style.display = 'block'; // Jeśli nie zaakceptowano, pokazujemy baner
+  } else {
+    cookiebanner.style.display = 'none'; // Jeśli zaakceptowano, nie pokazujemy banera
+  }
+
+  cookiebanner.style.bottom = cookieBannerSliderPos - dialogHeight + 'px';
+  cookieBannerSliderPos += 4;
+  if (cookieBannerSliderPos < dialogHeight) {
+    setTimeout(function () {
+      showCookieBanner();
+    }, 1);
+  } else {
+    cookieBannerSliderPos = 0;
+    cookiebanner.style.bottom = '0px';
+  }
 }
 
 const cookiebutton = document.querySelector('.c-button');
-const cookiebanner = document.getElementById("cookiebanner");
+const cookiebanner = document.getElementById('cookiebanner');
 
 // Funkcja do ukrywania banera po akceptacji
 function hideCookieBanner() {
-    cookiebanner.style.display = "none";
-    localStorage.setItem('cookiesAccepted', 'true'); // Zapisujemy, że użytkownik zaakceptował cookies
+  cookiebanner.style.display = 'none';
+  localStorage.setItem('cookiesAccepted', 'true'); // Zapisujemy, że użytkownik zaakceptował cookies
 }
 
 // Obsługa kliknięcia na przycisk "Zgadzam się"
 cookiebutton.addEventListener('click', (e) => {
-    hideCookieBanner();
+  hideCookieBanner();
 });
 
 // Wywołanie funkcji, aby pokazać baner
 window.onload = showCookieBanner;
-
-
-
 
 // POKAZANIE MENU PO NAJECHANIU NA OPIS
 const descriptionMenu = document.querySelector('.menu-description-a');
@@ -193,7 +187,6 @@ const descriptionMenuList = document.querySelector('.menu-description-list');
 //   hideMenu();
 // })
 
-
 // function showMenu () {
 //   descriptionMenuList.style.display = "flex";
 // }
@@ -202,45 +195,44 @@ const descriptionMenuList = document.querySelector('.menu-description-list');
 //   descriptionMenuList.style.display = "none";
 // }
 
+// descriptionMenu.addEventListener('click', (e) => {
+//   console.log("tets1");
+//   if (descriptionMenuList.style.display === "none"){
+//     descriptionMenuList.style.display = "flex";
+//     console.log("TEST")
+//   } else if (descriptionMenuList.style.display = "flex"){
+//     descriptionMenuList.style.display = "none";
+//     console.log("test2")
+//   }
+// })
 
-  // descriptionMenu.addEventListener('click', (e) => {
-  //   console.log("tets1");
-  //   if (descriptionMenuList.style.display === "none"){
-  //     descriptionMenuList.style.display = "flex";
-  //     console.log("TEST")
-  //   } else if (descriptionMenuList.style.display = "flex"){
-  //     descriptionMenuList.style.display = "none";
-  //     console.log("test2")
-  //   }
-  // })
+// window.addEventListener('click', (e) => {
+//   console.log("tets2");
+//   if (descriptionMenuList.style.display = "flex"){
+//     descriptionMenuList.style.display = "none";
+//     console.log("TEST2")
+//   }
+// })
 
-  // window.addEventListener('click', (e) => {
-  //   console.log("tets2");
-  //   if (descriptionMenuList.style.display = "flex"){
-  //     descriptionMenuList.style.display = "none";
-  //     console.log("TEST2")
-  //   }
-  // })
+descriptionMenu.addEventListener('click', (e) => {
+  if (descriptionMenuList.classList.contains('hidden')) {
+    descriptionMenuList.classList.remove('hidden');
+  } else {
+    descriptionMenuList.classList.add('hidden');
+  }
+});
 
+descriptionMenu.addEventListener('mouseover', (e) => {
+  if (descriptionMenuList.classList.contains('hidden')) {
+    descriptionMenuList.classList.remove('hidden');
+  }
+});
 
-
-  
-  descriptionMenu.addEventListener('click', (e) => {
-    if (descriptionMenuList.classList.contains("hidden")){
-      descriptionMenuList.classList.remove("hidden");   
-    } else {
-      descriptionMenuList.classList.add("hidden");
-    }
-  })
-
-  descriptionMenu.addEventListener('mouseover', (e) => {
-    if (descriptionMenuList.classList.contains("hidden")){
-      descriptionMenuList.classList.remove("hidden");   
-    }
-  })
-
-  window.addEventListener('click', (e) => {
-    if (!descriptionMenu.contains(e.target) && !descriptionMenuList.contains(e.target)) {
-      descriptionMenuList.classList.add("hidden");
-    }
-  });
+window.addEventListener('click', (e) => {
+  if (
+    !descriptionMenu.contains(e.target) &&
+    !descriptionMenuList.contains(e.target)
+  ) {
+    descriptionMenuList.classList.add('hidden');
+  }
+});
